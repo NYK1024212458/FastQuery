@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/location_fragment"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="85dp">
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="21dp"
+            android:layout_marginRight="21dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_search_background"
+            android:layout_width="match_parent"
+            android:layout_height="41dp">
+            
+            
+            <TextView
+                android:paddingLeft="22dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:textSize="15sp"
+                android:textColor="#ff1da8e8"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="+86"/>
+            
+
+
+            <EditText
+                android:background="@null"
+                android:id="@+id/et_input_phone"
+                android:gravity="center_vertical"
+                android:paddingLeft="26dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:inputType="phone"
+                android:layout_height="match_parent"
+                android:hint="请输入手机号"
+                android:textSize="15sp"
+                android:textColor="#333333"/>
+
+
+            
+            <Button
+                android:id="@+id/bt_location"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:background="@drawable/shape_search_button_background"
+                android:layout_width="81dp"
+                android:layout_height="match_parent"
+                android:text="定位"/>
+            
+            
+        </LinearLayout>
+            
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+    
+
+
+    
+
+</LinearLayout>

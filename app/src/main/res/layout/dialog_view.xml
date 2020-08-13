@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_background"
+
+
+   android:layout_gravity="center"
+
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_gravity="center"
+    android:gravity="center"
+
+    android:paddingRight="28dp"
+    android:paddingLeft="28dp"
+    android:paddingTop="26dp"
+    android:paddingBottom="26dp"
+    android:layout_width="240dp"
+    android:layout_height="184dp"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/et_authorizationCode"
+        android:paddingLeft="17dp"
+        android:textColor="#888888"
+        android:hint="请输入核验码"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:background="@drawable/shape_dialog_input" />
+
+    <LinearLayout
+
+        android:layout_marginTop="14dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <ImageView
+
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:background="@drawable/guanyu" />
+
+
+        <TextView
+            android:textSize="9sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="您还没有授权码？请联系在线客服"
+            android:textColor="#888888" />
+
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/bt_ContactCustomer"
+        android:layout_marginTop="22dp"
+
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:background="@drawable/shape_dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF"
+        android:text="联系客服"/>
+
+</LinearLayout>
+</LinearLayout>

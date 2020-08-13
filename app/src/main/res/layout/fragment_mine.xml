@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+
+            android:id="@+id/fl_common_user_bg"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:background="@drawable/mine_beijing"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="32dp"
+            android:visibility="gone">
+
+
+        </FrameLayout>
+
+        <!--vip状态未开通时隐藏-->
+
+
+        <FrameLayout
+
+            android:id="@+id/vip_show"
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:background="@drawable/mine_beijing1"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="177dp"
+                android:orientation="horizontal"
+                android:paddingLeft="95dp">
+
+                <TextView
+                    android:id="@+id/tv_function_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="非VIP会员有功能限制"
+                    android:textColor="#9D5517"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/go_open_vip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="47dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="去开通"
+
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:layout_width="7dp"
+                        android:layout_height="11dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:background="@drawable/you" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <FrameLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="43dp"
+                    android:layout_marginTop="220dp"
+                    android:text="请联系在线客服升级为VIP会员"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp" />
+            </FrameLayout>
+        </FrameLayout>
+
+
+        <FrameLayout
+            android:id="@+id/fl_user_common"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="37dp">
+
+            <ImageView
+                android:id="@+id/iv_head_img"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:layout_gravity="center_vertical"
+                android:background="@mipmap/ic_launcher" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="86dp"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:text="15738071295"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+
+                    <ImageView
+                        android:visibility="visible"
+                        android:id="@+id/iv_vip_mark"
+                        android:layout_width="21dp"
+                        android:layout_height="17dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/huiyuan" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_vip_state"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="非正版可用软件"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="  (有效期99年)"
+                        android:textColor="#ffffffff"
+                        android:textSize="12sp"
+                        android:visibility="gone" />
+
+                    <TextView
+
+                        android:id="@+id/go_verify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:background="@drawable/shape_background_go"
+                        android:paddingLeft="9dp"
+                        android:paddingTop="6dp"
+                        android:paddingRight="9dp"
+                        android:paddingBottom="6dp"
+                        android:text="去验证 >>"
+                        android:textColor="#ff393939"
+                        android:textSize="9sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="27dp" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/member_standard"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mine_01" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="会员标准"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:background="@drawable/you" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/online_customer"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mine_02" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="在线客服"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:background="@drawable/you" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/flow_standard"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/liuliang" />
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="流量标准"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:background="@drawable/you" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/query_record"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mine_03" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="查询记录"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:background="@drawable/you" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_us"
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginTop="4dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingLeft="26dp"
+        android:paddingRight="26dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/mine_04" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:text="关于我们"
+            android:textColor="#474747"
+            android:textSize="15sp" />
+
+
+        <ImageView
+            android:layout_width="8dp"
+            android:layout_height="13dp"
+            android:layout_gravity="center"
+            android:background="@drawable/you" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical">
+
+<include layout="@layout/top_item"/>
+
+    <LinearLayout
+        android:layout_marginLeft="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+
+        android:layout_marginTop="11dp"
+        android:layout_marginRight="18dp"
+        android:background="@drawable/shape_search"
+        android:drawableLeft="@drawable/shouji"
+        android:drawablePadding="25dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="25dp"
+        android:text="手机号码: 1111111" />
+
+
+        <TextView
+            android:drawablePadding="17dp"
+            android:gravity="center_vertical"
+            android:text="该手机中提取到的信息"
+            android:drawableLeft="@drawable/shape_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="41dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_one"/>
+
+
+
+        <TextView
+            android:drawablePadding="17dp"
+            android:gravity="center_vertical"
+            android:text="未获取ROOT权限"
+            android:drawableLeft="@drawable/shape_rectangle"
+            android:layout_width="match_parent"
+            android:layout_height="41dp" />
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recycle_two"/>
+
+
+
+
+
+    </LinearLayout>
+</LinearLayout>
